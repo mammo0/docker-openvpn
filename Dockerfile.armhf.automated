@@ -15,7 +15,7 @@ COPY --from=armBin /usr/bin/cross-build-start /usr/bin/
 COPY --from=armBin /usr/bin/cross-build-end /usr/bin/
 COPY --from=armBin /usr/bin/qemu-arm-static /usr/bin/
 COPY --from=armBin /usr/bin/resin-xbuild /usr/bin/
-COPY --from=armBin /bin/sh.real /bin/
+COPY --from=armBin /usr/bin/sh.real /bin/
 RUN [ "cross-build-start" ]
 # Testing: pamtester
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories && \
