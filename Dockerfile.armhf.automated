@@ -1,5 +1,5 @@
 # needed for cross building
-FROM resin/armv7hf-debian-qemu AS armBin
+FROM mammo0/armv7hf-debian-qemu AS armBin
 
 
 # Original credit: https://github.com/jpetazzo/dockvpn
